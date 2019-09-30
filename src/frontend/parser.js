@@ -1,3 +1,14 @@
+/**
+ * @module src/frontend/parser
+ * @description Módulo que representa el analizador sintáctico.
+ * @version 1.0
+ * <pre>
+ * Integrantes:
+ *  Leonardo Arellano Martínez
+ *  Francisco Santos Montoya
+ * </pre>
+ */
+
 let types = {
     op: 'op',
     num: 'num'
@@ -5,6 +16,14 @@ let types = {
 
 let parser = {};
 
+/**
+ * @function parse
+ * @name module:src/frontend/parser#parse
+ * @public
+ * @description Función que se encarga del proceso de análisis sintáctico.
+ * @param {Array.<String>} tokens Arreglo que contiene los tokens.
+ * @returns {JSON} JSON que representa el árbol de sintaxis abstracta.
+ */
 parser.parse = function (tokens) {
     let c = 0;
 

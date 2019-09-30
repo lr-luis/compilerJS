@@ -1,3 +1,14 @@
+/**
+ * @module src/compiler
+ * @description Módulo que representa el compilador.
+ * @version 1.0
+ * <pre>
+ * Integrantes:
+ *  Leonardo Arellano Martínez
+ *  Francisco Santos Montoya
+ * </pre>
+ */
+
 let fs = require('fs')
 let scanner = require('./frontend/scanner');
 let parser = require('./frontend/parser');
@@ -8,7 +19,10 @@ let inputString = '';
 
 /**
  * @function start
+ * @name module:src/compiler#start
+ * @public
  * @description Función que inicia el proceso del compilador.
+ * @returns {JSON} Retorna el árbol de sintaxis abstracta.
  */
 compiler.start = function () {
     readFileContent();
@@ -20,7 +34,8 @@ compiler.start = function () {
 
 /**
  * @function readFileContent
- * @description Función que lee el contenido de archivo y settea la variable global del módulo, inputString
+ * @name module:src/compiler#readFileContent
+ * @description Función que lee el contenido de archivo y settea la variable global del módulo, inputString.
  */
 function readFileContent () {
     try {

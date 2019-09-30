@@ -1,6 +1,22 @@
+/**
+ * @module src/utilities/validator
+ * @description Módulo que se encarga de validar los parámetros de entrada del cli.
+ * @version 1.0
+ * <pre>
+ * Integrantes:
+ *  Leonardo Arellano Martínez
+ *  Francisco Santos Montoya
+ * </pre>
+ */
 const fs = require('fs');
 const chalk = require('chalk');
 
+/**
+ * @function validateArgv
+ * @name module:src/utilities/validator#validateArgv
+ * @description Función que se encarga de verificar que el archivo fuente sea aceptado por nuestro compilador.
+ * @returns {Boolean} Valor que indica si el archivo es valido o no.
+ */
 function validateArgv() {
     let isValidInput = true;
     if (typeof fileValue === 'undefined') {

@@ -1,3 +1,13 @@
+/**
+ * @module compilerJS
+ * @description Punto de entrada del compilador
+ * @version 1.0
+ * <pre>
+ * Integrantes:
+ *  Leonardo Arellano Martínez
+ *  Francisco Santos Montoya
+ * </pre>
+ */
 const program = require('commander');
 const validator = require('./src/utilities/validator');
 let compiler = require('./src/compiler');
